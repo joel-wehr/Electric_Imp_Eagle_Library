@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.01" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="mm" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -52,7 +52,7 @@
 <layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
@@ -3325,6 +3325,52 @@ package type OT</description>
 <pin name="PROG" x="10.16" y="0" length="short" direction="in" rot="R180"/>
 <pin name="VSS" x="10.16" y="-2.54" length="short" direction="pwr" rot="R180"/>
 </symbol>
+<symbol name="LTST-C195KGJRKT">
+<wire x1="3.81" y1="0" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="3.81" y1="-2.54" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="1.27" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="3.81" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="0.508" y1="-0.762" x2="-0.889" y2="-2.159" width="0.1524" layer="94"/>
+<wire x1="0.635" y1="-1.905" x2="-0.762" y2="-3.302" width="0.1524" layer="94"/>
+<text x="8.636" y="-2.032" size="1.778" layer="95" rot="R90">&gt;NAME</text>
+<text x="5.715" y="-2.032" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<polygon width="0.1524" layer="94">
+<vertex x="-0.889" y="-2.159"/>
+<vertex x="-0.508" y="-1.27"/>
+<vertex x="0" y="-1.778"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="-0.762" y="-3.302"/>
+<vertex x="-0.381" y="-2.413"/>
+<vertex x="0.127" y="-2.921"/>
+</polygon>
+<wire x1="-1.27" y1="0" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="-3.81" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="-2.54" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="-3.81" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="0" x2="-2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-3.81" y2="0" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-2.54" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-4.572" y1="-0.762" x2="-5.969" y2="-2.159" width="0.1524" layer="94"/>
+<wire x1="-4.445" y1="-1.905" x2="-5.842" y2="-3.302" width="0.1524" layer="94"/>
+<polygon width="0.1524" layer="94">
+<vertex x="-5.969" y="-2.159"/>
+<vertex x="-5.588" y="-1.27"/>
+<vertex x="-5.08" y="-1.778"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="-5.842" y="-3.302"/>
+<vertex x="-5.461" y="-2.413"/>
+<vertex x="-4.953" y="-2.921"/>
+</polygon>
+<wire x1="2.54" y1="0" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
+<pin name="P$1" x="-2.54" y="2.54" visible="off" length="short" direction="pas" rot="R270"/>
+<pin name="P$2" x="2.54" y="2.54" visible="off" length="short" direction="pas" rot="R270"/>
+<pin name="P$3" x="-2.54" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="P$4" x="2.54" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="LTST-S326KGJRKT" prefix="D" uservalue="yes">
@@ -3491,6 +3537,25 @@ IC-09995</description>
 <technology name="">
 <attribute name="PROD_ID" value="IC-09995"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LTST-C195KGJRKT" prefix="D">
+<description>LITEON LTSTC195KGJRKT Red &amp; Green SMD LED Top Fire</description>
+<gates>
+<gate name="G$1" symbol="LTST-C195KGJRKT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="LTST-C195KGJRKT">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+<connect gate="G$1" pin="P$3" pad="P$3"/>
+<connect gate="G$1" pin="P$4" pad="P$4"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
